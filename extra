@@ -1,0 +1,92 @@
+https://code.visualstudio.com/   > Install
+https://nodejs.org/en > Install
+https://git-scm.com/downloads > Install
+https://www.postman.com/downloads/ > Install
+https://github.com/   > Create Account
+https://github.com/Aakashdeveloper > Follow
+
+//extension
+> TabNine
+> Vscode-icons
+> githistory
+> gitlens
+> code spell checker
+
+
+//Prerequest
+HTML
+CSS
+Basic JavaScript
+(ifelse,function,loop, array,object,variable)
+
+
+Npm
+React = 4
+Mock API> Dummy Api
+json-server
+React_hooks -1
+React-GraphQL-1
+HOC
+loginapp
+Github
+Deployment
+-> MERN
+-> Netlify
+-> Aws
+-> Docker
+-> Nginx
+React-Redux =1
+Basic React Native=1
+Testing Jest Enzime
+///////Walkthrough///////
+React-Saga -1
+
+--------NOT Backend--------------
+API
+> GraphQL
+> Login/Logout
+> Zomato
+
+
+NPM
+> Node Package manager
+(Registory)
+
+> Open Source
+(Any Body can contribute)
+* Packages
+
+////////
+JSON
+Json web token
+[
+    {
+        "name":"John",
+        "city":"Amsterdam"
+    },
+    {
+        "name":"John",
+        "city":"Amsterdam"
+    }
+]
+///////
+package.json
+> Entry point to the app
+> command (start,build,test)
+> contains meta data(name,version,decription)
+> packages required for app
+
+///Step to generate package.json
+**NodeJs must be installed
+> open cmd/terminal and go inside the folder
+> npm init
+> answer all question
+> type "yes"
+
+///Step to install package
+**NodeJs must be installed
+> open cmd/terminal and go inside the folder
+> npm i packagename / npm install packagename
+
+package-lock > Dependecy tree
+.gitignore > Avoid pushing to git
