@@ -90,3 +90,98 @@ package.json
 
 package-lock > Dependecy tree
 .gitignore > Avoid pushing to git
+
+
+////////////////////////////////////////
+local
+> Local to the folder
+> Can only be used inside one application
+> npm i packagename
+dev
+> Local to the folder 
+> Can only be used inside one application
+> Only those dependency which are required at the time of development
+like testing
+> npm i packagename --save-dev
+
+global
+> Local to laptop
+> will not added in packages.json
+> can only be use to start run thing outside the app
+> Admin access to install
+
+/////Step to install global dependency
+# Win
+> open cmd as admin
+> npm i -g packagename
+
+# Mac/linux
+> open terminal
+> sudo npm i -g packagename
+
+
+
+////Step to generate react app
+# One Time Step
+> open cmd as admin
+> npm i -g create-react-app
+
+# Every time we need new app
+> Open cmd
+> go inside folder where we want app
+> create-react-app appname
+
+# One Step
+> npx create-react-app appname
+
+
+https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d
+
+React > Main package of the application
+React-Script > Help to run the application
+React-DOM > To render the content
+
+
+//
+es5
+es6
+Ecma Script
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+3
+
+//es6
+const add =(a,b) => {return a+b}
+add(2,3)
+5
+
+
+
+function add(a,b){
+    let out = [a,b]
+    return out
+}
+
+add(1,2)
+[1,2]
+
+/////////
+Class Component
+> Heavy as compare to functional
+> Can maintain state and have lifecycle
+> Logical Component
+
+Functional Component
+> Dumb component
+> Only use for display purpose
+
+
+
+Functional Component with hooks
+> All this which class and
+functional component can do

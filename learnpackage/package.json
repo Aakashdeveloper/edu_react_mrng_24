@@ -14,5 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5"
   }
 }
