@@ -120,7 +120,6 @@ global
 > sudo npm i -g packagename
 
 
-
 ////Step to generate react app
 # One Time Step
 > open cmd as admin
@@ -185,3 +184,58 @@ Functional Component
 Functional Component with hooks
 > All this which class and
 functional component can do
+
+
+State
+> Act like a local variable
+> Every component can have its own state
+> Any data interaction will happen through state
+> Every time state update component will rerender
+
+Props
+> help to transfer data between parent and child
+> We do not use it as a variable
+
+
+function add(test1,test2){
+    return test1+test2
+}
+
+
+var a = [1,2,3,4]
+
+a.map((data) => {
+    return data*2
+})
+
+parent > child (props)
+child > parent (props with call back)
+
+
+parent
+function add(a,b){
+    return a+b
+}
+
+child
+add(1,2)
+
+
+
+var a = [1,2,3,4]
+
+
+a.filter((data) => {
+    return data>2
+})
+
+var a = ["Delhi","Venice","Amsterdam","Innsburg"]
+
+a.indexOf('Amsterdam')
+2
+a.indexOf('Mumbai')
+-1
+a.indexOf('Delhi')
+0
+a.indexOf('Boston')
+-1
