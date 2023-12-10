@@ -239,3 +239,48 @@ a.indexOf('Delhi')
 0
 a.indexOf('Boston')
 -1
+
+
+params
+> What you pass after /
+> we need to define in the routing
+> if define then complousry to pass
+
+queryParams
+> What we pass after ?
+> No need to define
+> no complousory to pass
+
+
+//routing5
+history > Redireaction
+location > QueryParams
+match > Params
+
+
+var a = "?page=1"
+undefined
+a.split('=')
+(2) ['?page', '1']
+a.split('=')[1]
+'1'
+"?page=1&test=9"
+'?page=1&test=9'
+var b = "?page=1&test=9"
+undefined
+b.split('&')
+(2) ['?page=1', 'test=9']
+b.split('&')[1].split('=')
+(2) ['test', '9']
+b.split('&')[1].split('=')[1]
+'9'
+
+npm i react-router-dom@5.3.0
+
+
+//routin6
+npm i react-router-dom
+
+
+useState > To maintain and define the state
+useEffect > To call api
