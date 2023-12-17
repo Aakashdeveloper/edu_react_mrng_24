@@ -25,8 +25,7 @@ React = 4
 Mock API> Dummy Api
 json-server
 React_hooks -1
-React-GraphQL-1
-HOC
+/////////////////////////
 loginapp
 Github
 Deployment
@@ -35,6 +34,9 @@ Deployment
 -> Aws
 -> Docker
 -> Nginx
+React-GraphQL-1
+HOC
+
 React-Redux =1
 Basic React Native=1
 Testing Jest Enzime
@@ -315,3 +317,19 @@ var b = "my age is "+a
 var a = 10
 var b = `my age is ${a}`
 "my age is 10"
+
+
+var a =  [34, 32, 33, 30, 33]
+undefined
+a.indexOf(33)
+2
+a.splice(2,1)
+[33]
+a
+(4) [34, 32, 30, 33]
+a.indexOf(33)
+3
+a.splice(3,1)
+[33]
+a
+(3) [34, 32, 30]
