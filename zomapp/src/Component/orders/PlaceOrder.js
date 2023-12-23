@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import './PlaceOrder.css';
 
 const base_url = process.env.REACT_APP_API_URL;
+const pUrl = process.env.REACT_APP_POST_API
 
 class PlaceOrder extends Component {
     constructor(props){
@@ -27,6 +28,15 @@ class PlaceOrder extends Component {
         let obj = this.state;
         obj.menuItem = sessionStorage.getItem('menu')
         console.log(obj)
+        fetch(pUrl,{
+            method: 'POST',
+            headers:{
+                'accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(obj)
+        })
+        .then(this.props.history.push('/viewBooking'))
     }
 
 

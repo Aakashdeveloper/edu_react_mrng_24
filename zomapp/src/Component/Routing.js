@@ -6,6 +6,7 @@ import Home from './Home/Home';
 import Listing from './listing/listingapi';
 import Details from './details/details';
 import PlaceOrder from './orders/PlaceOrder';
+import ViewBooking from './orders/viewOrder';
 
 const Routing = () => {
     return(
@@ -15,6 +16,7 @@ const Routing = () => {
             <Route path="/listing/:mealId" component={Listing}/>
             <Route path="/details" component={Details}/>
             <Route path="/placeOrder/:restName" component={PlaceOrder}/>
+            <Route path="/viewBooking" component={ViewBooking}/>
             <Footer/>
         </BrowserRouter>
     )
