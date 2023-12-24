@@ -13,6 +13,7 @@ function Login(){
         email:"shivani@gmail.com",
         password:"12345678"
     });
+    const [message, setMessage] = useState()
 
     const handleChange = (event) => {
         const {name,value} = event.target;
@@ -26,7 +27,23 @@ function Login(){
 
 
     function handleSubmit(){
-       
+       fetch(url,{
+           method: 'POST',
+           headers:{
+               'accept':'application/json',
+               'Content-Type':'application/json'
+           },
+           body:JSON.stringify(formData)
+       })
+       .then((res) => res.json())
+       .then((data) => {
+           if(data.auth === false){
+               setMessage(data.token)
+           }else{
+               sessionStorage.setItem('ltk',data.token);
+               navigate('/profile')
+           }
+       })
     }
      
 
@@ -39,6 +56,7 @@ function Login(){
                             <h3>Login</h3>
                         </div>
                         <div className="panel-body">
+                            <h2 style={{color:'red'}}>{message}</h2>
                             <div className='row'>
                             
                                 <div className='col-md-6 form-group'>

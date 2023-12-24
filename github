@@ -1,0 +1,24 @@
+//for github profile
+https://github.com/Aakashdeveloper/Aakashdeveloper/edit/master/README.md
+
+
+//
+//firsttime form new folder
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Aakashdeveloper/zomappjan.git
+git push -u origin main
+
+//next every time form same folder
+git add .
+git commit -m "first commit"
+git push
+
+
+git clone https://github.com/Aakashdeveloper/zomappjan
+
+git branch branchname
+
+git pull

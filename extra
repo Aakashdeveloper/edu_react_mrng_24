@@ -26,15 +26,16 @@ Mock API> Dummy Api
 json-server
 React_hooks -1
 loginapp
-/////////////////////////
+React-GraphQL-1
 Github
 Deployment
 -> MERN
 -> Netlify
+-> ReactPy
+-> Nginx
+/////////////////////////
 -> Aws
 -> Docker
--> Nginx
-React-GraphQL-1
 HOC
 
 React-Redux =1
@@ -356,3 +357,10 @@ npm i -g json-server
 
 
 json-server --watch data.json --port 8199
+
+
+make code build
+> npm run build
+
+
+https://app.netlify.com/
