@@ -33,6 +33,7 @@ Deployment
 -> Netlify
 -> ReactPy
 -> Nginx
+Testing Jest Enzime
 /////////////////////////
 -> Aws
 -> Docker
@@ -40,7 +41,6 @@ HOC
 
 React-Redux =1
 Basic React Native=1
-Testing Jest Enzime
 ///////Walkthrough///////
 React-Saga -1
 
@@ -364,3 +364,9 @@ make code build
 
 
 https://app.netlify.com/
+
+
+view > Display part
+action > Any Api calling
+reducer > take the previous state and an action return next state
+store > centralized place that hold state

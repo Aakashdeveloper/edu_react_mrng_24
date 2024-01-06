@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "mobiapp",
+    "slug": "mobiapp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "mobiapp"
+}

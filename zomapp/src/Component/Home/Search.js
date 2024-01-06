@@ -59,7 +59,7 @@ class Search extends Component {
                     Search Place Near To You
                 </div>
                 <div id="dropdown">
-                    <select onChange={this.handleCity}>
+                    <select onChange={this.handleCity} id="city-dropdown">
                         <option>---Select City---</option>
                         {this.renderCity(this.state.location)}
                     </select>
