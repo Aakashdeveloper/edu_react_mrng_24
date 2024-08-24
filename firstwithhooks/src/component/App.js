@@ -1,44 +1,30 @@
-import React,{Fragment,Component} from 'react';
+import React,{useState} from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Products from './Products';
+import ProductDisplay from './product';
 import JSON from './data.json';
-import MemoComponent from './MemoComponent';
-import CallbackComponent from './Callbackcomponent';
 
-class App extends Component {
+const App = () => {
+    const [productData] = useState(JSON)
+    const [filterData, setFilteredData] = useState(JSON)
 
-    constructor(){
-        super()
 
-        this.state={
-            productData:JSON,
-            filteredData: JSON
-        }
-    }
-
-    filterData = (keyword) => {
-        let output = this.state.productData.filter((data) => {
-            return data.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1
+    const filteredData = (keyword)  => {
+        let output = productData.filter((data) => {
+            return data.name.toLowerCase().indexOf(keyword.toLowerCase())>-1
         })
-
-        this.setState({filteredData: output})
+        setFilteredData(output)
     }
-    
 
-    render(){
-        //console.log(JSON)
-        return(
-            <Fragment>
-                <Header userInput={(data) => {this.filterData(data)}}/>
-                <CallbackComponent/>
-                {/* <Products products={this.state.filteredData}/> */}
-                <Footer year="2024" month="Jan"/>
-            </Fragment>
-           
-        )
-    }
-   
+    return(
+        <>
+            <Header userInput={(data) => {filteredData(data)}}/>
+            <ProductDisplay prodData={filterData}/>
+            <Footer year="2025" month="Jan"/>
+        </>
+    )
 }
+
+
 
 export default App;
