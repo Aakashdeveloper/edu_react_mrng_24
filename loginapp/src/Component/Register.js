@@ -71,7 +71,7 @@ function Register(){
                                     <input className="form-control" name="phone" value={formData.phone}
                                     onChange={handleChange}/>
                                 </div>
-                                <div className='col-md-6 form-group'>
+                                <div className='col-md-5 form-group'>
                                     <label>Role</label>
                                     <input className="form-control" name="role" value={formData.role}
                                     onChange={handleChange}/>
