@@ -369,4 +369,4 @@ https://app.netlify.com/
 view > Display part
 action > Any Api calling
 reducer > take the previous state and an action return next state
-store > centralized place that hold state
+store > centralized place that hold states
